@@ -1,0 +1,13 @@
+
+[[overview]]
+= Overview
+
+* link:api-guide-v1.html[ApiGuide /v1]
+* link:api-guide-v2.html[ApiGuide /v2]
+
+
+[[overview-http-verbs]]
+this document contains a lot of documentation as well as request/response examples which are generated
+and therefore are always up-to-date
+
+include::user.asciidoc[]

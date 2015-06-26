@@ -1,0 +1,14 @@
+= Documentation
+Peter Mucha;
+:doctype: book
+:toc: right
+:toc-title: Documentation /v2
+:sectanchors:
+:sectlinks:
+:toclevels: 4
+:source-highlighter: highlightjs
+:path: /v2/
+:v2:
+
+
+include::overview.asciidoc[]
