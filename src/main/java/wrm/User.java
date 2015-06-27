@@ -15,4 +15,10 @@ public class User {
 	@JsonView(Views.V2.class)
 	private String gender;
 	
+
+	@JsonView(Views.V1.class)
+	public String getG(){
+		return gender;
+	}
+	
 }

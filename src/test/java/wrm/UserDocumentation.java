@@ -15,6 +15,7 @@ public class UserDocumentation extends DocumentationTestBase {
           .andDo(response()
                   .common(fieldWithPath("id").description("user-id"),
                           fieldWithPath("name").description("name of user"))
+                  .v1(    fieldWithPath("g").description("gender of the user"))
                   .v2(    fieldWithPath("gender").description("gender of the user"))
                   .build());
 	}

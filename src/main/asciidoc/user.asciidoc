@@ -6,4 +6,5 @@ get the user
 include::{generated}{path}/user/http-request.adoc[]
 include::{generated}{path}/user/http-response.adoc[]
 
+include::{generated}{path}/user/response-fields.adoc[]
 

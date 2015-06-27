@@ -62,16 +62,6 @@ public abstract class DocumentationTestBase {
         return MockMvcRequestBuilders.post(paths.getPath() + urlTemplate, urlVariables);
     }
     
-    protected MockMultipartHttpServletRequestBuilder fileUpload(String urlTemplate, String...urlVariables){
-        return MockMvcRequestBuilders.fileUpload(paths.getPath() + urlTemplate, urlVariables);
-    }
-   
-    
-    public static class NoopResultHandler implements ResultHandler{
-        @Override public void handle(MvcResult result) throws Exception {}
-    }
-    
-    
     
     public class ResponseDescriptor {
         List<FieldDescriptor> allFields = new LinkedList<FieldDescriptor>();
@@ -94,7 +84,7 @@ public abstract class DocumentationTestBase {
         }
         
         public RestDocumentationResultHandler build(){
-            return RestDocumentation.document("." + paths.getPath()+"{method-name}")
+			return RestDocumentation.document("." + paths.getPath()+"{method-name}")
                     .withResponseFields(allFields.toArray(new FieldDescriptor[]{}));
         }
     }
